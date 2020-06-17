@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="product.css" rel="stylesheet" />
+    <link href="assets/swiper.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="assets/swiper.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+    <title>以諾科技</title>
+</head>
+<body>
+    <!-- menu start -->
+    <div class="wrapper">
+        <header id="header" class="scoll-hide">
+            <nav>
+                <a class="logo" href="index.html"><img class="logoimg" src="images/17404.jpg" /></a>
+                <ul>
+                    <li><a href="index.html">主頁面</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active">商品</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- menu finish -->
+        <section class="sec1"></section>
+        <section class="content">
+            <div style="background: #f8f8f8; height: 210vh; box-shadow: 2px 2px 2px 2px #414141; ">
+                <h1 class="prtitle">商品一覽</h1>
+
+                <div class="card">
+                    <div class="top-section">
+                        <img id="image-container" src="images/flight.jpg" alt="" />
+                        <div class="navo">
+                            <img onclick="change_img(this)" src="images/flight.jpg" alt="" />
+                            <img onclick="change_img(this)" src="images/flight2.jpg" alt="" />
+                            <img onclick="change_img(this)" src="images/flight4.jpg" alt="" />
+                        </div>
+                        <div class="price">$1400</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="name">手勢控制飛行器2.4G</div>
+                        <div class="dis">體感飛行器，耐摔新手入門無人機</div>
+                        <a class="btn" href="https://shopee.tw/~%E6%96%B9%E8%88%9F%E7%A7%91%E6%95%99~%E6%89%8B%E5%8B%A2%E6%8E%A7%E5%88%B6%E5%9B%9B%E8%BB%B8%E9%A3%9B%E8%A1%8C%E5%99%A8-%E9%AB%94%E6%84%9F%E9%A3%9B%E8%A1%8C%E5%99%A8-%E8%80%90%E6%91%94%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E7%84%A1%E4%BA%BA%E6%A9%9F-%E5%85%92%E7%AB%A5%E9%A3%9B%E8%A1%8C%E5%99%A8-i.8626429.1944824755" target="_blank">購買</a>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="top-section">
+                        <img id="image-container2" src="images/mbot.jpg" alt="" />
+                        <div class="navo">
+                            <img onclick="change_img2(this)" src="images/mbot.jpg" alt="" />
+                            <img onclick="change_img2(this)" src="images/mbot2.jpg" alt="" />
+                            <img onclick="change_img2(this)" src="images/mbot3.jpg" alt="" />
+                        </div>
+                        <div class="price">$340</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="name">LED8×16 LED 表情面板</div>
+                        <div class="dis">LED 表情面板(不含mbot機器人)</div>
+                        <a class="btn" href="https://shopee.tw/~%E6%96%B9%E8%88%9F%E7%A7%91%E6%95%99~mBot%E6%A9%9F%E5%99%A8%E4%BA%BA-LED8%C3%9716-LED-%E8%A1%A8%E6%83%85%E9%9D%A2%E6%9D%BF-%E9%BB%9E%E9%99%A3%E9%9D%A2%E6%9D%BF-i.8626429.2078569163" target="_blank">購買</a>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="top-section">
+                        <img id="image-container3" src="images/battery.jpg" alt="" />
+                        <div class="navo">
+                            <img onclick="change_img3(this)" src="images/battery.jpg" alt="" />
+                            <img onclick="change_img3(this)" src="images/battery2.jpg" alt="" />
+                            <img onclick="change_img3(this)" src="images/battery3.jpg" alt="" />
+                        </div>
+                        <div class="price">$650</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="name">大疆 特洛 DJI TELLO 原廠電池</div>
+                        <div class="dis">原廠電池 公司貨 TelloEDU空拍機電池 1100mAh</div>
+                        <a class="btn" href="https://shopee.tw/~%E6%96%B9%E8%88%9F%E7%A7%91%E6%95%99~%E5%A4%A7%E7%96%86-%E7%89%B9%E6%B4%9B-DJI-TELLO-%E5%8E%9F%E5%BB%A0%E9%9B%BB%E6%B1%A0-%E5%85%AC%E5%8F%B8%E8%B2%A8-TelloEDU%E7%A9%BA%E6%8B%8D%E6%A9%9F%E9%9B%BB%E6%B1%A0-1100mAh-i.8626429.5705218537" target="_blank">購買</a>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="top-section">
+                        <img id="image-container4" src="images/usb.jpg" alt="" />
+                        <div class="navo">
+                            <img onclick="change_img4(this)" src="images/usb.jpg" alt="" />
+                            <img onclick="change_img4(this)" src="images/usb2.jpg" alt="" />
+                            <img onclick="change_img4(this)" src="images/usb3.jpg" alt="" />
+                        </div>
+                        <div class="price">$160 - $190</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="name">Micro USB+USB雙介面OTG讀卡機</div>
+                        <div class="dis">E-Books T21 Micro USB+USB雙介面OTG讀卡機</div>
+                        <a class="btn" href="https://shopee.tw/~%E6%96%B9%E8%88%9F%E7%A7%91%E6%95%99~E-Books-T21-Micro-USB-USB%E9%9B%99%E4%BB%8B%E9%9D%A2OTG%E8%AE%80%E5%8D%A1%E6%A9%9F-i.8626429.1941881253" target="_blank">購買</a>
+                    </div>
+                </div>
+                <div class="card5">
+                    <div class="top-section">
+                        <img id="image-container5" src="images/batterycharge.jpg" alt="" />
+                        <div class="navo">
+                            <img onclick="change_img5(this)" src="images/batterycharge.jpg" alt="" />
+                            <img onclick="change_img5(this)" src="images/batterycharge2.jpg" alt="" />
+
+                        </div>
+                        <div class="price">$550</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="name">特洛 TELLO 多充電池充電器</div>
+                        <div class="dis">特洛 TELLO 多充電池充電器 充電器 快充 一對四快充</div>
+                        <a class="btn" href="https://shopee.tw/~%E6%96%B9%E8%88%9F%E7%A7%91%E6%95%99~%E7%89%B9%E6%B4%9B-TELLO-%E5%A4%9A%E5%85%85%E9%9B%BB%E6%B1%A0%E5%85%85%E9%9B%BB%E5%99%A8-%E5%85%85%E9%9B%BB%E5%99%A8-%E5%BF%AB%E5%85%85-%E4%B8%80%E5%B0%8D%E5%9B%9B%E5%BF%AB%E5%85%85-i.8626429.5305222052" target="_blank">購買</a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var container = document.getElementById("image-container");
+                container2 = document.getElementById("image-container2");
+                container3 = document.getElementById("image-container3");
+                container4 = document.getElementById("image-container4");
+                container5 = document.getElementById("image-container5");
+                function change_img(image) {
+                    container.src = image.src;
+                }
+                function change_img2(image) {
+                    container2.src = image.src;
+                }
+                function change_img3(image) {
+                    container3.src = image.src;
+                }
+                function change_img4(image) {
+                    container4.src = image.src;
+                }
+                function change_img5(image) {
+                    container5.src = image.src;
+                }
+            </script>
+
+        </section>
+        <div>
+            <footer class="content_end">
+                <div>
+                    <h2>©2010 enoch Inc.</h2>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

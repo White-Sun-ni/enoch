@@ -1,0 +1,226 @@
+﻿@font-face{
+    font-family: 'Makinas-4-Flat';
+    src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/technology.jpg);
+}
+
+header{
+    
+    height: 100px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+    background: white;
+    font-family: 'Makinas-4-Flat';
+}
+
+nav.black{
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav .logo{
+    color: white;
+    padding: 0px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.logoimg{
+    width: 100%;
+    height: 100%;
+}
+
+nav.black .logo{
+    color: black;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 20px;
+    line-height: 80px;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    text-shadow: 1px 1px 2px #868686;
+}
+
+nav ul li a:hover{
+    color: #1bcceb;
+}
+
+nav.black ul li a{
+    color: black;
+}
+
+nav ul li a:focus{
+    outline: none;
+}
+
+nav ul li a.active{
+    background: #E2472F;
+    color: #fff;
+    border-radius: 6px;
+}
+
+section.sec1{
+
+}
+
+.content{
+    width: 100%;
+    height: 83vh;
+    margin-top: 0px;
+    
+    background-size: cover;
+}
+
+.content p{
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.intitle{
+    margin: 0;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Makinas-4-Flat';
+}
+
+.jobs_says{
+    margin-top: 100px;
+}
+
+.says{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.sname{
+    margin: 0;
+    padding-right: 500px;
+    padding-left: 500px;
+    font-size: 20px;
+    color: #fff;
+    text-align: right;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container a{
+    position: relative;
+    width: 150px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    margin: 10px;
+    text-transform: uppercase;
+    background: #191919;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.container a span{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    transition: 0s ease-in;
+}
+
+.container a:hover span{
+    transition: 0.4s ease-in;
+    transform: translateY(-100%);
+}
+
+.container a:before{
+    content: '';
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    background: #2299ff;
+    border-radius: 50%;
+    transition: 0.4s ease-in;
+}
+
+.container a:hover:before{
+    bottom: -150px;
+}
+
+.container a:nth-child(2):before{
+    bottom: 60px;
+}
+
+.container a:nth-child(2):hover:before{
+    bottom: -40px;
+}
+
+.content_end{
+    bottom: auto;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    height: 6.5vh;
+    background-color: #0e0e0e;
+}
+
+.content_end h2{
+    margin: 0;
+    padding-top: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px #333;
+}
+
