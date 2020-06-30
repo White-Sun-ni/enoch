@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
     font-family: 'Makinas-4-Flat';
     src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
 }
@@ -8,7 +8,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(images/p_da0617_m_da06170.jpg);
+    
 }
 
 header{
@@ -100,18 +100,43 @@ section.sec1{
 
 }
 
-.content{
+.titleA{
+    font-family: 'Makinas-4-Flat';
     padding: 0;
-    height: 83vh;
+    height: 280px;
     margin-top: 0px;
+    background: url(images/keyboard.jpg);
+    background-size: cover;
 }
 
-.content p{
+.aboutus{
+    margin: 0;
+    padding-top: 80px; 
+    font-size: 100px;
+    text-align: center;
+}
+
+.titleA p{
     width: 900px;
     margin: 30px auto;
     text-align: justify;
     font-size: 20px;
     line-height: 30px;
+}
+
+.content{
+    padding-top: 20px;
+    height: 51.3vh;
+    margin-top: 0px;
+}
+
+.content p{
+    font-family: 'Makinas-4-Flat';
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 50px;
+    line-height: 80px;
 }
 
 .intitle{
