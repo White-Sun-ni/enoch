@@ -33,7 +33,7 @@ nav{
 nav.black{
     height: 100px;
     padding: 10px 100px;
-    background: rgba(0,0,0,.5);
+    background: black;
 }
 
 nav .logo{
