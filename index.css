@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
     font-family: 'Makinas-4-Flat';
     src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
 }
@@ -34,7 +34,8 @@ nav.black{
 
 nav .logo{
     color: white;
-    padding: 0px 20px;
+    padding: 0px;
+    padding-left: 25%;
     height: 80px;
     float: left;
     font-size: 24px;
@@ -52,9 +53,10 @@ nav.black .logo{
 
 nav ul{
     list-style: none;
-    float: right;
+    text-align: center;
     margin: 0;
     padding: 0;
+    padding-right: 0px;
     display: flex;
 }
 
