@@ -1,12 +1,12 @@
-@font-face{
-    font-family: 'Makinas-4-Flat';
-    src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
+@font-face {
+    font-family: 'vd64i-trtmn';
+    src: url('assets/vd64i-trtmn.woff') format('woff');
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: url(images/technology.jpg);
+    background: white;
 }
 
 header{
@@ -14,7 +14,7 @@ header{
     height: 100px;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,13 +24,25 @@ nav{
     box-sizing: border-box;
     transition: .3s;
     background: white;
-    font-family: 'Makinas-4-Flat';
+    font-family: 'vd64i-trtmn';
 }
 
-nav.black{
-    height: 100px;
-    padding: 10px 100px;
+nav #marker{
+    top: 70px;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    bottom: 0;
+    transition: 0.5s;
+    border-radius: 4px;
+    background: #1bcceb;
 }
+
+    nav.black {
+        height: 100px;
+        padding: 10px 100px;
+    }
 
 nav .logo{
     color: white;
@@ -88,12 +100,6 @@ nav ul li a:focus{
     outline: none;
 }
 
-nav ul li a.active{
-    background: #E2472F;
-    color: #fff;
-    border-radius: 6px;
-}
-
 section.sec1{
 
 }
@@ -114,14 +120,14 @@ section.sec1{
     line-height: 30px;
 }
 
-.intitle{
+.intitle {
     margin: 0;
     padding-top: 100px;
     text-align: center;
     font-size: 100px;
-    color: white;
+    color: #000;
     text-shadow: 1px 1px 2px black;
-    font-family: 'Makinas-4-Flat';
+    font-family: 'vd64i-trtmn';
 }
 
 .jobs_says{
@@ -130,7 +136,7 @@ section.sec1{
 
 .says{
     font-size: 20px;
-    color: #fff;
+    color: #000;
     text-align: center;
     text-shadow: 1px 1px 2px black;
 }
@@ -140,7 +146,7 @@ section.sec1{
     padding-right: 500px;
     padding-left: 500px;
     font-size: 20px;
-    color: #fff;
+    color: #000;
     text-align: right;
     text-shadow: 1px 1px 2px black;
 }
