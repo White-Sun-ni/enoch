@@ -1,19 +1,20 @@
-﻿*{
-	margin:0;
-	padding:0;
-	font-family: 'Makinas-4-Flat';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'vd64i-trtmn';
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'vd64i-trtmn', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
-@font-face{
-    font-family: 'Makinas-4-Flat';
-    src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
+@font-face {
+    font-family: 'vd64i-trtmn';
+    src: url('assets/vd64i-trtmn.woff') format('woff');
 }
+
 
 body{
     width: 100%;
@@ -29,7 +30,7 @@ header{
     height: 100px;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,14 +41,25 @@ nav{
     transition: .3s;
     z-index: 10000;
     background: white;
-    font-family: 'Makinas-4-Flat';
+    font-family: 'vd64i-trtmn';
 }
+
+    nav #marker {
+        top: 70px;
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 0;
+        bottom: 0;
+        transition: 0.5s;
+        border-radius: 4px;
+        background: #1bcceb;
+    }
 
 nav.black{
     height: 100px;
     padding: 10px 100px;
-    background: rgba(0,0,0,.5);
-}
+    }
 
 nav .logo{
     color: white;
@@ -66,7 +78,7 @@ nav .logo{
 }
 
 nav.black .logo{
-    color: white;
+    color: black;
 }
 
 nav ul{
@@ -99,21 +111,10 @@ nav ul li a:hover{
 
 nav.black ul li a{
     color: white;
-    text-shadow: 1px 1px 2px black;
-}
+ }
 
 nav ul li a:focus{
     outline: none;
-}
-
-nav ul li a.active{
-    background: #E2472F;
-    color: #fff;
-    border-radius: 5px;
-}
-
-section.sec1{
-
 }
 
 .gotop{
@@ -128,6 +129,10 @@ section.sec1{
     font-size: 60px;
     color: #171717;
     z-index: 100;
+}
+
+section.sec1{
+
 }
 
 .content{
