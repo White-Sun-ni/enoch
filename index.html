@@ -16,28 +16,44 @@
             }
         })
     </script>
-    <title>以諾資訊</title>
+    <title>方舟科技</title>
 </head>
 <body>
     <!-- menu start -->
     <div class="wrapper">
-        <header id="header" class="scoll-hide">
-            <nav>
-                <a class="logo" href="index.html"><img class="logoimg" src="images/17404.jpg" /></a>
-                <ul>
-                    <li><a href="index.html">主頁面</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="product.html">商品</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">課程項目</a></li>
-                </ul>
-            </nav>
+        <header id="header" class="scoll-hide">           
+                <nav>
+                    <a class="logo" href="index.html"><img class="logoimg" src="images/logo.jpg" /></a>
+                    <ul>
+                        <li><div id="marker"></div></li>
+                        <li><a href="index.html">主頁面</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">商品</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">課程項目</a></li>
+                    </ul>
+                </nav>
+            <script type="text/javascript">
+                var marker = document.querySelector('#marker');
+                var menu = document.querySelectorAll('nav ul li a');
+
+                function indicator(e) {
+                    marker.style.left = e.offsetLeft + "px";
+                    marker.style.width = e.offsetWidth + "px";
+                }
+
+                menu.forEach(link => {
+                    link.addEventListener('mouseover', (e) => {
+                        indicator(e.target);
+                    })
+                })
+            </script>
         </header>
     <!-- menu finish -->
         <section class="sec1"></section>
         <section class="content">
-            <h1 class="intitle">以諾資訊</h1>
+            <h1 class="intitle">方舟科技</h1>
             <div class="jobs_says">
                 <h2 class="says">Innovation distinguishes between a leader and a follower.</h2>
                 <h2 class="sname">from Steve Jobs</h2>
