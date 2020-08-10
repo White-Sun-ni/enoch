@@ -1,6 +1,6 @@
-@font-face{
-    font-family: 'Makinas-4-Flat';
-    src: url(assets/Makinas-4-Flat.woff),url(Makinas-4-Flat.ttf);
+@font-face {
+    font-family: 'vd64i-trtmn';
+    src: url('assets/vd64i-trtmn.woff') format('woff');
 }
 
 html{
@@ -12,7 +12,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(images/p_da0617_m_da06170.jpg);
+    background: white;
 }
 
 header{
@@ -20,7 +20,7 @@ header{
     height: 100px;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@ nav{
     transition: .3s;
     z-index: 10000;
     background: white;
-    font-family: 'Makinas-4-Flat';
+    font-family: 'vd64i-trtmn';
 }
 
 nav.black{
@@ -39,6 +39,18 @@ nav.black{
     padding: 10px 100px;
     background: white;
 }
+
+    nav #marker {
+        top: 70px;
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 0;
+        bottom: 0;
+        transition: 0.5s;
+        border-radius: 4px;
+        background: #1bcceb;
+    }
 
 nav .logo{
     color: white;
@@ -97,19 +109,12 @@ nav ul li a:focus{
     outline: none;
 }
 
-nav ul li a.active{
-    background: #E2472F;
-    color: #fff;
-    border-radius: 5px;
-}
-
 .gotop{
-    background: white;
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 80px;
-    right: 120px;
+    right: 100px;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
@@ -123,15 +128,15 @@ section.sec1{
 }
 
 .content{
-    padding: 120px 350px 120px;
-    height: 220vh;
+    padding: 0;
+    height: 150vh;
     margin-top: 0px;
 }
 
 
 
-.prtitle{
-    font-family: 'Makinas-4-Flat';
+.prtitle {
+    font-family: 'vd64i-trtmn';
     margin: 0;
     padding: 0;
     text-align: center;
@@ -142,46 +147,51 @@ section.sec1{
 
 .card{
     width: 360px;
+    height: 500px;
     background: #f1f1f1;
     position: absolute;
     top: 60%;
-    left: 35%;
+    left: 20%;
     transform: translate(-50%,-50%);
 }
 
-.card2{
+.card2 {
     width: 360px;
+    height: 500px;
     background: #f1f1f1;
     position: absolute;
     top: 60%;
-    left: 65%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.card3{
+.card3 {
     width: 360px;
+    height: 500px;
     background: #f1f1f1;
     position: absolute;
-    margin-top: 900px;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.card4 {
+    width: 360px;
+    height: 500px;
+    background: #f1f1f1;
+    position: absolute;
+    margin-top: 1000px;
     left: 35%;
     transform: translate(-50%,-50%);
 }
 
-.card4{
+.card5 {
     width: 360px;
+    height: 500px;
     background: #f1f1f1;
     position: absolute;
-    margin-top: 900px;
+    margin-top: 1000px;
     left: 65%;
-    transform: translate(-50%,-50%);
-}
-
-.card5{
-    width: 360px;
-    background: #f1f1f1;
-    position: absolute;
-    margin-top: 163vh;
-    left: 35%;
     transform: translate(-50%,-50%);
 }
 
@@ -244,21 +254,29 @@ section.sec1{
 }
 
 .product-info{
+    width: 312px;
+    height: 142px;
     padding: 24px;
 }
 
 .name{
+    height: 60px;
     text-transform: uppercase;
     font-size: 24px;
     color: #333;
 }
 
 .dis{
+    height: 40px;
     font-size: 16px;
     opacity: 0.7;
 }
 
-.btn{
+.buy{
+    padding: 0;
+}
+
+.btn {
     display: block;
     background: #E2472F;
     text-align: center;
