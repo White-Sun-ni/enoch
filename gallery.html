@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,16 +28,32 @@
     <div class="wrapper">
         <header id="header" class="scoll-hide">
             <nav>
-                <a class="logo" href="index.html"><img class="logoimg" src="images/17404.jpg" /></a>
+                <a class="logo" href="index.html"><img class="logoimg" src="images/logo.jpg" /></a>
                 <ul>
+                    <li><div id="marker"></div></li>
                     <li><a href="index.html">主頁面</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="product.html">商品</a></li>
                     <li><a href="#">聯絡我們</a></li>
-                    <li><a class="active">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="#">課程項目</a></li>
                 </ul>
             </nav>
+            <script type="text/javascript">
+                var marker = document.querySelector('#marker');
+                var menu = document.querySelectorAll('nav ul li a');
+
+                function indicator(e) {
+                    marker.style.left = e.offsetLeft + "px";
+                    marker.style.width = e.offsetWidth + "px";
+                }
+
+                menu.forEach(link => {
+                    link.addEventListener('mouseover', (e) => {
+                        indicator(e.target);
+                    })
+                })
+            </script>
         </header>
         <!-- menu finish -->
         <section class="sec1"></section>
